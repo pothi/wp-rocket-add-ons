@@ -9,6 +9,8 @@
  * Description: Remove all or selective actions to clear the entire cache
  */
 
+defined('ABSPATH') or die( 'Direct access is forbidden!' . PHP_EOL );
+
 add_action( 'init', 'tinywp_disable_clearing_full_cache' );
 function tinywp_disable_clearing_full_cache() {
     // Launch hooks that deletes all the cache domain
